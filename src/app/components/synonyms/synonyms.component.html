@@ -1,0 +1,10 @@
+<div class="synonyms">
+  <h3>Synonyms</h3>
+  <ul>
+    <app-synonym-item 
+      *ngFor="let synonym of synonyms" 
+      [synonym]="synonym"
+      (changeBySynonym)="changeWordForSynonym($event)">
+    </app-synonym-item>
+  </ul>
+</div>
